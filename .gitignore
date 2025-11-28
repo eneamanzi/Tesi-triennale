@@ -5,8 +5,8 @@
 textidote.html
 result*
 
-main.pdf
-riassunto.pdf
+*.pdf
+
 *.bib.*
 
 ### VisualStudioCode ###
