@@ -14,7 +14,7 @@
                 "-synctex=1", 
                 "-interaction=nonstopmode",
                 "-file-line-error",
-                "-pdflua",  // Usiamo il motore LuaLaTeX
+                "-pdflua", 
                 "%DOC%"
             ]
         }
