@@ -1,7 +1,4 @@
 {
-    // L'unica riga essenziale per la velocizzazione (la dir temp non è più qui)
-    "latex-workshop.latex.outDir": ".temp", 
-
     "latex-workshop.latex.recipes": [
         {
             "name": "Compila (LuaLaTeX)",
