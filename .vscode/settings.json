@@ -1,0 +1,25 @@
+{
+    // L'unica riga essenziale per la velocizzazione (la dir temp non è più qui)
+    "latex-workshop.latex.outDir": ".temp", 
+
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "Compila (LuaLaTeX)",
+            "tools": ["latexmk-lua"]
+        }
+    ],
+
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk-lua",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1", 
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdflua",  // Usiamo il motore LuaLaTeX
+                "%DOC%"
+            ]
+        }
+    ]
+}
