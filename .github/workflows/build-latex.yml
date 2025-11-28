@@ -23,7 +23,7 @@ jobs:
       uses: actions/checkout@v4
 
     # --- 1. COMPILAZIONE PRESENTAZIONE ---
-    - name: 'Compile 1: Presentazione (Slides)' # Correzione: virgolette
+    - name: 'Compile 1 - Presentazione (Slides)' # Correzione: virgolette
       uses: xu-cheng/latex-action@v3
       with:
         working_directory: Presentazione
@@ -31,7 +31,7 @@ jobs:
         args: -pdflua -interaction=nonstopmode -jobname=Presentazione
 
     # --- 2. COMPILAZIONE RIASSUNTO ---
-    - name: 'Compile 2: Riassunto' # Correzione: virgolette
+    - name: 'Compile 2 - Riassunto' # Correzione: virgolette
       uses: xu-cheng/latex-action@v3
       with:
         working_directory: Riassunto
@@ -39,7 +39,7 @@ jobs:
         args: -pdflua -interaction=nonstopmode -jobname=Riassunto
 
     # --- 3. COMPILAZIONE TESI ---
-    - name: 'Compile 3: Tesi Finale' # Correzione: virgolette
+    - name: 'Compile 3 - Tesi Finale' # Correzione: virgolette
       uses: xu-cheng/latex-action@v3
       with:
         working_directory: Tesi
