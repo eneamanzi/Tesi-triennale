@@ -39,12 +39,12 @@ jobs:
         args: -pdflua -interaction=nonstopmode -jobname=Riassunto
 
     # --- 3. COMPILAZIONE TESI ---
-    - name: 'Compile 3 - Tesi Finale' # Correzione: virgolette
+    - name: 'Compile 3 - Tesi' # Correzione: virgolette
       uses: xu-cheng/latex-action@v3
       with:
         working_directory: Tesi
         root_file: main.tex
-        args: -pdflua -interaction=nonstopmode -jobname=Tesi_Finale
+        args: -pdflua -interaction=nonstopmode -jobname=Tesi
 
     # --- 4. COMMIT E PUSH DEI RISULTATI ---
     - name: 'Commit and push compiled PDFs' # Correzione: virgolette
@@ -52,7 +52,7 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        git add Presentazione/Presentazione.pdf Riassunto/Riassunto.pdf Tesi/Tesi_Finale.pdf
+        git add Presentazione/Presentazione.pdf Riassunto/Riassunto.pdf Tesi/Tesi.pdf
         
         git diff --staged --quiet || git commit -m "Auto-update all compiled PDFs [skip ci]"
         git push
