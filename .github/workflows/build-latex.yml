@@ -35,7 +35,7 @@ jobs:
       uses: xu-cheng/latex-action@v3
       with:
         working_directory: Riassunto
-        root_file: riassunto.tex
+        root_file: main.tex
         args: -pdflua -interaction=nonstopmode -jobname=Riassunto
 
     # --- 3. COMPILAZIONE TESI ---
