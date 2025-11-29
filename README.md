@@ -1,3 +1,4 @@
+[English version](README.en.md) | **Versione Italiana**
 # Tesi di Laurea Triennale: Design e sviluppo di una soluzione per la valutazione di sistemi distribuiti
 
 ## Informazioni sulla Tesi
