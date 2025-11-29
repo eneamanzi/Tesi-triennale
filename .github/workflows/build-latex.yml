@@ -19,11 +19,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: 'Checkout repository' # Aggiunto virgolette
+    - name: 'Checkout repository' 
       uses: actions/checkout@v4
 
     # --- 1. COMPILAZIONE PRESENTAZIONE ---
-    - name: 'Compile 1 - Presentazione (Slides)' # Correzione: virgolette
+    - name: 'Compile 1 - Presentazione (Slides)' 
       uses: xu-cheng/latex-action@v3
       with:
         working_directory: Presentazione
@@ -31,7 +31,7 @@ jobs:
         args: -pdflua -interaction=nonstopmode -jobname=Presentazione
 
     # --- 2. COMPILAZIONE RIASSUNTO ---
-    - name: 'Compile 2 - Riassunto' # Correzione: virgolette
+    - name: 'Compile 2 - Riassunto' 
       uses: xu-cheng/latex-action@v3
       with:
         working_directory: Riassunto
@@ -39,7 +39,7 @@ jobs:
         args: -pdflua -interaction=nonstopmode -jobname=Riassunto
 
     # --- 3. COMPILAZIONE TESI ---
-    - name: 'Compile 3 - Tesi' # Correzione: virgolette
+    - name: 'Compile 3 - Tesi' 
       uses: xu-cheng/latex-action@v3
       with:
         working_directory: Tesi
@@ -47,7 +47,7 @@ jobs:
         args: -pdflua -interaction=nonstopmode -jobname=Tesi
 
     # --- 4. COMMIT E PUSH DEI RISULTATI ---
-    - name: 'Commit and push compiled PDFs' # Correzione: virgolette
+    - name: 'Commit and push compiled PDFs' 
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
@@ -58,7 +58,7 @@ jobs:
         git push
     
     # --- 5. UPLOAD ARTIFACTS (Backup) ---
-    - name: 'Upload all PDFs as artifacts' # Correzione: virgolette
+    - name: 'Upload all PDFs as artifacts' 
       uses: actions/upload-artifact@v4
       with:
         name: All-Documents-PDF
