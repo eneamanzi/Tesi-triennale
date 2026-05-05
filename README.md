@@ -1,3 +1,8 @@
+[![CC BY-NC-ND 4.0][cc-by-nc-nd-shield]][cc-by-nc-nd]
+
+[cc-by-nc-nd]: https://creativecommons.org/licenses/by-nc-nd/4.0/deed.it
+[cc-by-nc-nd-shield]: https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg
+
 [English version](README.en.md) | **Versione Italiana**
 # Tesi di Laurea Triennale: Design e sviluppo di una soluzione per la valutazione di sistemi distribuiti
 
@@ -63,3 +68,16 @@ Per rimuovere tutti i file ausiliari generati dal processo di compilazione (come
 ```bash
 latexmk -c
 ```
+
+## Licenza
+
+[![CC BY-NC-ND 4.0][cc-by-nc-nd-image]][cc-by-nc-nd]
+
+Questo lavoro è distribuito con licenza
+**Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale**.
+
+Puoi condividerlo liberamente purché tu citi l'autore,
+non lo usi per scopi commerciali e non lo modifichi.
+
+[cc-by-nc-nd]: https://creativecommons.org/licenses/by-nc-nd/4.0/deed.it
+[cc-by-nc-nd-image]: https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
